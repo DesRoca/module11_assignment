@@ -4,8 +4,9 @@ import uuid
 from typing import Optional, Dict, Any
 
 from sqlalchemy import Column, String, DateTime, Boolean
+from sqlalchemy.orm import relationship
 from sqlalchemy.dialects.postgresql import UUID
-from sqlalchemy.orm import declarative_base
+from app.database import Base
 from sqlalchemy.exc import IntegrityError
 from passlib.context import CryptContext
 from jose import JWTError, jwt
@@ -13,8 +14,6 @@ from pydantic import ValidationError
 
 from app.schemas.base import UserCreate
 from app.schemas.user import UserResponse, Token
-
-Base = declarative_base()
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
@@ -32,6 +31,7 @@ class User(Base):
     email = Column(String(120), unique=True, nullable=False)
     username = Column(String(50), unique=True, nullable=False)
     password = Column(String(255), nullable=False)
+    calculations = relationship("Calculation", back_populates="user")
     is_active = Column(Boolean, default=True, nullable=False)
     is_verified = Column(Boolean, default=False, nullable=False)
     last_login = Column(DateTime, nullable=True)
