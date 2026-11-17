@@ -1,7 +1,7 @@
 # IS601 Module 11: Assignment-Implement and Test a Calculation Model with Optional Factory Pattern
 
 ## Objective
-For this assignment, I defined a Calculation model using SQLAlchemy and create robust validation with Pydantic schemas. I also implemented a factory pattern for extensibility and reinforce my CI/CD pipeline by testing the new functionality.
+For this assignment, I defined a Calculation model using SQLAlchemy and created robust validation with Pydantic schemas. I also implemented a factory pattern for extensibility and reinforced my CI/CD pipeline by testing the new functionality.
 
 ## My Github Repository
 https://github.com/DesRoca/module11_assignment
