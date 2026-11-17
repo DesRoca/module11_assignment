@@ -1,16 +1,16 @@
-# IS601 Module 10: FastAPI Secure User Model and CI/CD Pipeline
+# IS601 Module 11: Assignment-Implement and Test a Calculation Model with Optional Factory Pattern
 
 ## Objective
-For this assignment, I enhanced my FastAPI application by implementing a secure user model using SQLAlchemy and Pydantic. I also integrated password hashing, write tests, and configure a full CI/CD pipeline with GitHub Actions and Docker Hub.
+For this assignment, I defined a Calculation model using SQLAlchemy and create robust validation with Pydantic schemas. I also implemented a factory pattern for extensibility and reinforce my CI/CD pipeline by testing the new functionality.
 
 ## My Github Repository
-https://github.com/DesRoca/module10_assignment
+https://github.com/DesRoca/module11_assignment
 
 ## My Github Actions Workflow
-https://github.com/DesRoca/module10_assignment/actions/runs/42560190279
+https://github.com/DesRoca/module11_assignment/actions
 
 ## My DockerHub Image
-https://hub.docker.com/r/desroca/601_module9/tags
+https://hub.docker.com/repository/docker/desroca/601_module9/tags/54f2035041930deae3b505919e9d215423aa3692/sha256:c63bc4040d9f9164c4c9f5733206871ce8d062b30aea4835ea1c41d833edd414
 
 # Instructions
 
@@ -24,7 +24,7 @@ https://hub.docker.com/r/desroca/601_module9/tags
 
 1. Clone the repository
 
-git clone https://github.com/DesRoca/module10_assignment.git
+git clone https://github.com/DesRoca/module11_assignment/actions
 cd module10_assignment
 
 2. Create and activate a virtual environment
