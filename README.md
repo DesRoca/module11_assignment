@@ -25,7 +25,7 @@ https://hub.docker.com/repository/docker/desroca/601_module9/tags/54f2035041930d
 1. Clone the repository
 
 git clone https://github.com/DesRoca/module11_assignment/actions
-cd module10_assignment
+cd module11_assignment
 
 2. Create and activate a virtual environment
 
